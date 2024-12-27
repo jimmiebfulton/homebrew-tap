@@ -5,14 +5,14 @@ class ActionsPlayground < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "<%= linux-x86_64_archive %>"
+      url "https://github.com/jimmiebfulton/actions-playground/releases/downloads/<%= linux-x86_64_archive %>"
       sha256 "<%= linux_x86_64_sha256 %>"
     end
   end
   
   on_macos do
     if Hardware::CPU.arm?
-      url "<%= macos-arm64_archive %>"
+      url "https://github.com/jimmiebfulton/actions-playground/releases/downloads/<%= macos-arm64_archive %>"
       sha256 "<%= macos-arm64_sha256 %>"
     end
   end
