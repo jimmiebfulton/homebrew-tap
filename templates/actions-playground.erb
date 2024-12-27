@@ -1,6 +1,6 @@
-class ActionsPlayground < Formula
-  desc "Actions Playground CLI"
-  homepage "example.com"
+class <% name %> < Formula
+  desc "<% description %>"
+  homepage "<% homepage %>"
   version "<%= version %>"
 
   on_linux do
@@ -18,11 +18,11 @@ class ActionsPlayground < Formula
   end
 
   def install
-    bin.install "actions-playground"
+    bin.install "<% name %>"
   end
 
   test do
-    system "#{bin}/archions-playground --version"
+    system "#{bin}/<% name %> --version"
   end
 
 end
