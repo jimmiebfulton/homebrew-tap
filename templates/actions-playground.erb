@@ -1,0 +1,28 @@
+class ActionsPlayground < Formula
+  desc "Actions Playground CLI"
+  homepage "example.com"
+  version "<%= version %>"
+
+  on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "<% linux-x86_64_archive %>"
+      sha256 "<%= linux_x86_64_sha256 %>"
+    end
+  end
+  
+  on_macos do
+    if Hardware::CPU.arm?
+      url "<% macos-arm64_archive %>"
+      sha256 "<%= macos-arm64_sha256 %>"
+    end
+  end
+
+  def install
+    bin.install "actions-playground"
+  end
+
+  test do
+    system "#{bin}/archions-playground --version"
+  end
+
+end
