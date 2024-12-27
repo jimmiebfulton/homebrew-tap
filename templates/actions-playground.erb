@@ -1,6 +1,6 @@
 class ActionsPlayground < Formula
   desc "Actions Playground CLI"
-  homepage "<%= homepage %>"
+  homepage "example.com"
   version "<%= version %>"
 
   on_linux do
@@ -18,11 +18,11 @@ class ActionsPlayground < Formula
   end
 
   def install
-    bin.install "<%= name %>"
+    bin.install "actions-playground"
   end
 
   test do
-    system "#{bin}/<%= name %> --version"
+    system "#{bin}/actions-playground --version"
   end
 
 end
