@@ -1,6 +1,8 @@
 name: Update Formula
 run-name: Update ${{ github.event.client_payload.binary }} to ${{ github.event.client_payload.version }}
 
+permissions: write-all
+
 on:
   repository_dispatch:
     types: [update-formula]
