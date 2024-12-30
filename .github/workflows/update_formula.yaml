@@ -1,5 +1,5 @@
 name: Update Formula
-run-name: Update ${{ github.event.client_payload.name }} to ${{ github.event.client_payload.version }}
+run-name: Update ${{ github.event.client_payload.binary }} to ${{ github.event.client_payload.version }}
 
 on:
   repository_dispatch:
