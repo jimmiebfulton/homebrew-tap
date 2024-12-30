@@ -17,7 +17,7 @@ jobs:
       - uses: archetect/render-action@v1
         with:
           source: "archetype" 
-          answers: ${{ github.event.client_payload }}
+          answers: $PAYLOAD
 
       - run: |
           git config --global user.name "GitHub Actions"
