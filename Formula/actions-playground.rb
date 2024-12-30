@@ -1,19 +1,19 @@
 class ActionsPlayground < Formula
   desc "Actions Playground"
   homepage "https://github.com/jimmiebfulton/actions-playground"
-  verion "1.1.1"
+  version "1.1.2"
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimmiebfulton/actions-playground/v1.1.1/actions-playground-v1.1.1-linux-x86_64.tar.gz"
-      sha256 "https://github.com/jimmiebfulton/actions-playground/d38ce3e742db66684bead986078526895e7b68960aaec295c25abe2987c254af"
+      url "https://github.com/jimmiebfulton/actions-playground/v1.1.2/actions-playground-v1.1.2-linux-x86_64.tar.gz"
+      sha256 "https://github.com/jimmiebfulton/actions-playground/9c83d3728f9705a630ba90cc9cca89268954a2014b244baf99471c9ff852694d"
     end
   end
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jimmiebfulton/actions-playground/v1.1.1/actions-playground-v1.1.1-macos-arm64.tar.gz"
-      sha256 "https://github.com/jimmiebfulton/actions-playground/60cf1b8f6752bdf7fbb45b35d0c6982248219ac5890a86403b52259dbd1a3f6e"
+      url "https://github.com/jimmiebfulton/actions-playground/v1.1.2/actions-playground-v1.1.2-macos-arm64.tar.gz"
+      sha256 "https://github.com/jimmiebfulton/actions-playground/e42d62c51c38ee555f9e1225fe606df9cd85f8d562728d89bd46d1b6b947fd7e"
     end
   end
 
