@@ -1,0 +1,10 @@
+{
+  "binary": "archetect",
+  "description": "Archetect Code Generator",
+  "homepage": "https://archetect.github.io",
+  "version": "1.0.0",
+  "macos-arm64_archive": "MacOS arm64 Archive",
+  "macos-arm64_sha256": "MacOS arm64 SHA256",
+  "macos-x86_64_archive": "MacOS x86_64 Archive",
+  "macos-x86_64_sha256": "MacOS x86_64 SHA256"
+}
