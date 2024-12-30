@@ -10,6 +10,13 @@ class Archetect < Formula
     end
   end
 
+  on_macos do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "MacOS amd64 Archive"
+      sha256 "MacOS amd64 SHA256"
+    end
+  end
+
   def install
     bin.install "archetect"
   end
