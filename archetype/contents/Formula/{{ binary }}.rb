@@ -1,7 +1,7 @@
 class {{ binary | pascal_case }} < Formula
   desc "{{ description }}"
   homepage "{{ homepage }}"
-  verion "{{ version }}"{% if linux-x86_64_archive or linux-arm64_archive %}
+  version "{{ version }}"{% if linux-x86_64_archive or linux-arm64_archive %}
 
   on_linux do
     {% if linux-x86_64_archive %}if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
